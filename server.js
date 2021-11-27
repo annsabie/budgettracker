@@ -25,6 +25,8 @@ mongoose.connect(
   }
 );
 
+const uri = process.env.MONGODB_URI;
+
 app.use(require("./routes/api"));
 
 app.listen(PORT, () => {
